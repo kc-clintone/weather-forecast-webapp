@@ -80,7 +80,7 @@ const uiHandler = function uiHandler() {
 				.slice(-11, -7)} PM`
 		);
 	}
-
+	// switch background image according to weather
 	function imageSwitch(data, id) {
 		const code = data.weather[0].id;
 		switch (true) {
@@ -118,12 +118,12 @@ const uiHandler = function uiHandler() {
 				break;
 		}
 	}
-
+	// reset input forms
 	function clearForms() {
 		document.getElementById('searching').reset();
 		document.getElementById('navSearch').reset();
 	}
-
+	// auto regenerate a card
 	function createCard(data) {
 		const name = document.getElementById('cityName');
 		name.innerHTML = `${data.city.name}, ${data.city.country}`;
