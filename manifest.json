@@ -1,0 +1,10 @@
+{
+    "short_name":"weather app",
+    "name":"maseno weather app version 1",
+    "icons":[{"src":"/dist/download.ico", "sizes":"192x192", "type":"image/ico"}],
+    "start_url":"/dist/index.html",
+    "background_color": "#000000",
+    "display": "standalone",
+    "theme_color": "#ff0000"
+    
+}
