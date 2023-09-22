@@ -32,12 +32,12 @@ const events = function events() {
 			alert('Could not find the location');
 		}
 	}
-
+	// get location data
 	function getLocation(searchBar) {
 		const city = document.getElementById(searchBar).value.toLowerCase();
 		getSearch(city);
 	}
-
+	// get forecast data
 	async function getForecast() {
 		try {
 			const value = document.getElementById('search').value.toLowerCase();
